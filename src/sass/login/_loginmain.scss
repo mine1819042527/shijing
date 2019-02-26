@@ -1,0 +1,316 @@
+/*-------登录页logo-----------*/
+.gome-logo {
+    margin: 18px 40px 0 0;
+    a {
+        background: url("../img/loginlogo.png") no-repeat;
+        width: 300px;
+        height: 62px;
+        margin-top: 13px;
+    }
+}
+/*-------登录页安全协议-----------*/
+.safeTipDiv {
+    background-color: #fff4e3;
+    border-top: 1px solid #fee6bc;
+}
+.safeTip {
+    width: 828px;
+    height: 29px;
+    padding-left: 10px;
+    margin: 0 auto;
+    background-color: #fff4e3;
+    color: #ff7f23;
+    font: 400 12px/29px "Microsoft Yahei";
+    em {
+        background-position: -28px 0 !important;
+        display: block;
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin: 8px 5px 0 0;
+    }
+    a {
+        color: #2875cc;
+    }
+}
+
+/*--登录页主体内容--*/
+.content-bg {
+    width: 100%;
+    height: 480px;
+    background: #fff240;
+}
+.main {
+    width: 1200px;
+    height: 480px;
+    margin: 0 auto;
+    background-position: top center;
+    background-image: url("../img/990-1.jpg");
+    position: relative;
+    z-index: 990;
+    @include clearfix();
+}
+.login-box-wrap {
+    width: 350px;
+    float: right;
+    margin-top: 24px;
+    margin-right: 105px;
+    position: relative;
+    background: #fff;
+    overflow: visible;
+    .loginHead {
+        position: relative;
+        @include clearfix();
+    }
+    .loginHead,
+    .loginHead .loginTab {
+        height: 54px;
+    }
+}
+.loginHead {
+    .loginTab {
+        position: absolute;
+        border-bottom: 1px solid #f4f4f4;
+        font: 500 18px "Microsoft Yahei";
+        text-align: center;
+        color: #5e5e5e;
+        a {
+            height: 18px;
+            position: absolute;
+            left: 0;
+            width: 99%;
+            text-decoration: none;
+            top: 16px;
+            &.cur {
+                color: #e3101e;
+            }
+        }
+    }
+    .tabLeft {
+        left: 0;
+        width: 174px;
+        a {
+            border-right: 1px solid #f4f4f4;
+        }
+    }
+    .tabRight {
+        right: 0;
+        width: 175px;
+    }
+}
+.loginBox {
+    min-height: 241px;
+    padding: 25px 11px 0 19px;
+}
+.login-wrap {
+    width: 300px;
+    position: relative;
+    padding: 5px 10px 0;
+    .actions {
+        letter-spacing: 10px;
+    }
+}
+.login-item {
+    position: relative;
+    height: 52px;
+    .default {
+        position: absolute;
+        left: 12px;
+        top: 11px;
+        color: #A5A5A5;
+        font-size: 14px;
+        z-index: 1;
+        display: block;
+        em {
+            font-family: "Microsoft Yahei";
+        }
+    }
+}
+.clear-btn {
+    right: 18px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    overflow: hidden;
+    //display: none;
+    background-position: -20px -90px;
+    background-image: url(../img/spr-icon.png);
+}
+.txt {
+    position: relative;
+    padding: 8px 10px 7px;
+    width: 268px;
+    height: 25px;
+    background: url("../img/capital-tip-common.png") no-repeat -500px 0 transparent;
+    border: 1px solid #CCC;
+    font-family: Arial,simsun;
+    outline: 0 none;
+    color: #333;
+    font-size: 14px;
+    line-height: 21px;
+    z-index: 2;
+}
+.remember {
+    padding: 10px 0 12px;
+    @include clearfix();
+    input {
+        float: left;
+        margin-right: 4px;
+        margin-top: 3px;
+    }
+    label {
+        color: #5e5e5e;
+    }
+    .overflowhide {
+    overflow: hidden;
+}
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.colorccc {
+    color: #ccc;
+}
+.displayb {
+    display: block;
+}
+.paddrl10 {
+    padding: 0 10px;
+}
+.fontBlink,
+.fontBlink:hover {
+    color: #2875cc;
+}
+.btnnuw {
+    display: block;
+    width: 290px;
+    height: 42px;
+    background: #ff5757;
+    font: 500 18px/41px "Microsoft Yahei";
+    color: #fff;
+    text-align: center;
+    border: 0 none;
+    outline: 0;
+    word-spacing: 3px;
+    cursor: pointer;
+}
+.sm-login-box {
+    width: 320px;
+    color: #888;
+    padding: 0 0 24px;
+    a {
+        color: #888;
+        position: relative;
+    }
+    .registerBtn {
+        position: absolute;
+        bottom: 10px;
+        right: 14px;
+        width: 50px;
+        height: 18px;
+        color: #069;
+    }
+}
+.default-state {
+    width: 320px;
+    height: 167px;
+    text-align: center;
+}
+.qrcode-main {
+    position: relative;
+    width: 320px;
+    height: 165px;
+}
+.qrcode-Image {
+    float: left;
+    position: absolute;
+    left: 75px;
+    border: 1px solid #e6e6e6;
+}
+.qrcode-desc {
+    padding: 17px 0 0;
+    a {
+        color: #ff5757;
+        font-family: "瀹嬩綋";
+    }
+}
+.qrcode-desc,
+.smCode {
+    font-family: '瀹嬩綋';
+    color: #5e5e5e;
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;
+}
+.smCode {
+    margin-top: 5px;
+}
+.corp-login {
+    overflow: hidden;
+    clear: both;
+    background-color: #fcfcfc;
+    padding: 9px 20px;
+    color: #a5a5a5;
+    position: relative;
+    border: 1px solid #f0f0f0;
+    dd {
+        @include clearfix();
+        a {
+            float: left;
+            white-space: nowrap;
+            cursor: pointer;
+            color: #5e5e5e;
+            padding: 0 8px;
+            margin: 6px 0;
+            em {
+                font-family: arial;
+            }
+            &.more {
+                position: absolute;
+                width: 19px;
+                height: 19px;
+                padding: 0;
+                margin: 0;
+                top: 14px;
+                right: 20px;
+                background-position: 0 0;
+            }
+            &:hover {
+                color: #e3101e;
+            }
+        }
+    }
+}
+
+.corp-login .play_icon {
+    width: 300px;
+}
+.borderLine {
+    border-right: 1px solid #e6e6e6;
+}
+.hide {
+    display: none;
+}
+.survey {
+    height: 16px;
+    color: #888;
+    position: absolute;
+    right: 108px;
+    top: -56px;
+    z-index: 990;
+    .icon {
+        display: inline-block;
+        margin-right: 8px;
+        padding-bottom: 2px;
+        width: 15px;
+        height: 16px;
+        background: url("../img/login-bg-common.png") 0 -257px no-repeat;
+        vertical-align: middle;
+    }
+}

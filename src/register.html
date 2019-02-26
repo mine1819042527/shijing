@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+
+	<body>
+		<!--注册页头部-->
+		<div id="gome-header" class="wrapper">
+			<div class="gome-logo">
+				<a href="javascript:;">国美</a>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="register">
+				<div class="reg-cont">
+					<p class="login-info">我已经注册，现在就<a href="javascript:;">登录</a></p>
+					<ul class="title">
+						<li class="cur">个人用户注册</li>
+						<li id="goTo">企业用户注册</li>
+					</ul>
+					<div class="form-list">
+
+						<form id="registerForm" name="registerForm" action="" method="post">
+							<div class="reg-items items-1">
+								<span class="reg-label">
+                <label for="J_Name">用户名：</label>
+              </span>
+								<input id="name" maxlength="25" name="login" value="" tabindex="1" class="i-text err" type="text" autocomplete="off" style="color:#5e5e5e;">
+								<div class="msg-box">
+									<div class="msg-weak err-tips" style="display: block;">
+										<div class="msg-cont">请输入用户名</div>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- 密码 -->
+							<div class="reg-items items-2">
+								<span class="reg-label">
+                <label for="J_Pwd">设置密码：</label>
+              </span>
+								<input id="password" maxlength="20" name="password" value="" tabindex="2" class="i-text focus" type="password" style="color:#5e5e5e;">
+								<div class="msg-box">
+									<div class="msg-weak" id="passwordTips">键盘大写锁定已打开</div>
+								</div>
+								<div class="pw-tips" id="pwd-safe" style="">
+									<span class="txt">安全程度：</span>
+									<div class="pw-safe pw-medium">
+										<div class="pw-bar"></div>
+										<div class="pw-letter clearfix">
+											<span>弱</span>
+											<span>中</span>
+											<span>强</span>
+										</div>
+									</div>
+									<a class="pw-suggest" href="javascript:void(0);">密码设置建议</a>
+								</div>
+
+								<span class="suc-icon"></span></div>
+
+							<!-- 确认密码 -->
+							<div class="reg-items items-3">
+								<span class="reg-label">
+                <label for="J_Repwd">确认密码：</label>
+              </span>
+								<input id="confirmPassword" maxlength="20" name="confirmPassword" value="" tabindex="3" class="i-text text confirmPasswrod" type="password" style="">
+								<div class="msg-box">
+									<div class="msg-weak">请再次输入密码</div>
+								</div>
+							</div>
+
+							<!-- 手机号码 -->
+							<div class="reg-items items-4">
+								<span class="reg-label">
+                <label for="J_Mobile">手机号码：</label>
+              </span>
+								<input id="mobile" maxlength="11" name="mobile" tabindex="3" class="i-text" type="text" isclick="true">
+
+								<div class="rule-box">
+									<span class="rule-box-text">手机号码格式有误，请重新输入</span>
+
+								</div>
+								<div class="rule-box" style="display:none;">
+									<span class="rule-box-text">手机号已被激活过，请重新输入</span>
+
+								</div>
+								<div class="rule-box" style="display:none;">
+									<span class="rule-box-text">手机号不能为空</span>
+
+								</div>
+								<span class="suc-icon"></span>
+							</div>
+
+							<div class="reg-items">
+								<span class="reg-label">
+                    <label>滑动验证：</label>
+                  </span>
+								<div id="slider">
+									<div id="slider_bg" style="width: 0px;"></div>
+									<span id="label" style="left: 0px;">&gt;&gt;</span> <span id="labelTip">请按住滑块,拖动到最右边</span>
+								</div>
+								<div style="border: 1px solid #cc0000" class="check check-border">
+									<a class="check-phone" href="javascript:void(0);" id="verifySliderTip" style="padding: 11px 10px 14px;color:#cc0000;">请拖动滑块，完成验证</a>
+								</div>
+							</div>
+
+							<!--推荐码-->
+							<div class="reg-items" id="chooseNumDiv">
+								<span class="reg-label">
+                      <label>推荐码<i>(选填)</i>：</label>
+                  </span>
+								<span class="default" id="chooseNumDefault">填写推荐人 推荐码 帮好友赚收入</span>
+								<input id="chooseNum" name="refereeCode" maxlength="25" tabindex="1" class="i-text" autocomplete="off" type="text">
+								<span id="chooseNumSucc" class="suc-icon"></span>
+								<div class="rule-box" id="checkNum">
+									<span class="rule-box-text">推荐码错误</span>
+
+								</div>
+							</div>
+
+							<div class="reg-items-btn">
+								<div class="agreement" style="display:none;">
+									<label class="agreement-select">
+                    <input type="checkbox" value="" id="checkInput" checked="checked" isclick="true">我已阅读并接受<a href="javascript:void(0);">《国美在线服务协议》</a>
+                </label>
+									<div class="rule-box" id="serviceAgreement" style="display:none;">
+										<span class="rule-box-text">请阅读并同意《国美在线服务协议》</span>
+										<span class="rule-box-pos"></span>
+									</div>
+								</div>
+
+								<input class="reg-btn" value="立即注册" type="button">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

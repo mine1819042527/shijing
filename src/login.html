@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="国美在线(Gome.com.cn)国美电器唯一官方网上商城，中国领先的专业家电网购平台。全球品牌电视、洗衣机、电脑、手机、数码、空调、电脑配件、生活电器、网络产品等正品行货，更低价格，更快送达，为您提供便捷、诚信的服务。有国美，生活美！" name="description">
+		<meta content="用户登录" name="Keywords">
+		<title>用户登录-国美</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+
+	<body>
+		<!--登录页头部-->
+		<div id="gome-header" class="wrapper">
+			<div class="gome-logo">
+				<a href="javascript:;">国美</a>
+			</div>
+		</div>
+		<!--安全协议-->
+		<div class="safeTipDiv">
+			<p class="safeTip">
+				<em></em> 依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版
+				<a href="javascript:;" target="_blank">《国美隐私政策》
+				</a>已上线，将更有利于保护您的个人隐私。
+			</p>
+		</div>
+
+		<!--登录页主体内容-->
+		<div class="content-bg">
+			<div class="main">
+				<div class="login-box-wrap">
+
+					<div class="loginHead">
+						<div class="loginTab tabLeft"><a href="javascript:void(0)" class="">扫码登录</a></div>
+						<div class="loginTab tabRight"><a href="javascript:void(0)" class="cur">账户登录</a></div>
+					</div>
+					<div class="loginBox">
+
+						<div class="sm-login-box login-wrap" style="display: none;">
+							<div class="default-state">
+								<div class="qrcode-main">
+									<div class="qrcode-Image">
+										<img width="165" height="165" src="https://login.gome.com.cn/getQrcode.no?width=165&amp;height=165">
+									</div>
+								</div>
+								<div class="right-state" style="display: none;">
+									<div class="right-bg"></div>
+									<p class="right-title">扫描成功！</p>
+									<p class="padtop20" style="color:#a5a5a5">请按手机的提示操作，请勿刷新本页面！</p>
+								</div>
+								<div class="ma" style="display: none;">
+									<div class="error-state">
+										<p class="error-title">二维码已失效</p>
+										<a href="javascript:" onclick="refBarcode('f');">点击刷新</a>
+									</div>
+									<div class="keepOut"></div>
+								</div>
+							</div>
+							<p class="qrcode-desc">打开手机
+								<a href="javascript:;" class="blink" target="_blank" title="国美">国美</a>
+							</p>
+							<p class="smCode">扫一扫登录</p>
+							<a class="registerBtn" href="javascript:;" target="_blank" title="免费注册" tabindex="7">免费注册</a>
+						</div>
+
+						<div class="login-wrap">
+							<form action="" method="" id="frm" autocomplete="off">
+								<div>
+									<div class="login-item login-item-name" id="loginNameDiv">
+										<a href="javascript:;" class="clear-btn"></a>
+										<span class="default">手机号码<em>/</em>用户名<em>/</em>邮箱<em>/</em>门店会员卡号</span>
+										<input name="" tabindex="1" type="text" class="txt">
+									</div>
+									<div class="login-item login-item-pwd">
+										<a href="javascript:;" class="clear-btn"></a>
+										<span class="default">密码</span>
+										<input tabindex="2" type="password" class="txt" value="" autocomplete="off" onkeypress="">
+
+									</div>
+									<div class="remember overflowhide">
+										<div class="fl">
+											<input type="checkbox" id="autoLoginFlag" name="autoLoginFlag" class="ckbx autoLoginFlag" value="radiobutton">
+											<label for="autoLoginFlag">自动登录</label>
+										</div>
+										<div class="fr" style="width:120px;">
+											<a href="javascript:;" class="fl" target="_blank" tabindex="6" title="忘记密码">忘记密码</a>
+											<span class="fl paddrl10 displayb colorccc">|</span>
+											<a class="fontBlink fr" href="javascript:;" target="_blank" title="免费注册" tabindex="7">免费注册</a>
+
+										</div>
+									</div>
+
+									<div class="actions">
+										<input type="button" tabindex="5" value="登 录" class="btnnuw" onclick="">
+									</div>
+									<p style="padding: 30px 0 15px;">
+										<a href="javascript:;" class="fontBlink phoneLoginBtn">手机号快速登录(支持门店预留手机)</a>
+									</p>
+
+								</div>
+							</form>
+
+						</div>
+
+					</div>
+
+					<dl class="corp-login">
+						<dd class="play_icon">
+							<a href="javascript:;" class="borderLine" title="门店会员卡登录">门店会员卡登录</a>
+							<a id="corp_qq" href="javascript:;" target="_parent" title="QQ" tabindex="8" class="borderLine"><em>QQ</em></a>
+							<a id="corp_weixin" href="javascript:;" target="_parent" title="微信" tabindex="18" class="borderLine">微信</a>
+							<a id="corp_sina" href="javascript:;" target="_parent" title="新浪微博" tabindex="10" class="borderLine">微博</a>
+							<a id="corp_gomezhifu" href="javascript:;" target="_parent" title="美付宝" tabindex="17">美付宝</a>
+							<a id="corp_jixintong" href="javascript:;" target="_parent" title="极信通" tabindex="16" class="borderLine hide">极信通</a>
+							<a id="corp_alipay" href="javascript:;" target="_parent" title="支付宝" tabindex="9" class="hide">支付宝</a>
+
+						</dd>
+						<dd>
+							<a class="more"></a>
+						</dd>
+					</dl>
+				</div>
+				<a href="javascript:;" target="_blank" class="survey">
+					<s class="icon"></s> 我想对“登录”提意见
+				</a>
+			</div>
+		</div>
+		<div class="gome-footer"></div>
+	</body>
+
+</html>

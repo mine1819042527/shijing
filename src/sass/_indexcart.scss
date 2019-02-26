@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/*----------网页购物车-------------*/
+.cart {
+    position: absolute;
+    font-size: 12px;
+    right: 0;
+    top: 32px;
+    z-index: 92;
+    width: 140px;
+    @include floatflag(right);
+    z-index: 96;
+    a {
+        color: $font-color;
+        font-weight: 400;
+        em {
+            position: absolute;
+            width: 27px;
+            height: 20px;
+            background: url("../img/ui.png") -100px -701px;
+            top: 11px;
+            left: 10px;
+            span {
+                position: absolute;
+                height: 18px;
+                line-height: 18px;
+                padding: 0 3px;
+                top: -18px;
+                width: 14px;
+                text-align: center;
+                left: 15px;
+                background-color: #A5A5A5;
+                color: $bghover-color;
+                font-weight: 700;
+                i {
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border: 4px dashed transparent;
+                    border-color: transparent transparent transparent #A5A5A5;
+                    border-right: 0;
+                    border-left-style: solid;
+                    overflow: hidden;
+                    bottom: -4px;
+                    left: 5px;
+                }
+            }
+        }
+        p {
+            padding: 5px 20px 0 45px;
+            line-height: 34px;
+            height: 34px;
+            width: 75px;
+            &:hover {
+                color: $fonthover-color;
+                text-decoration: underline;
+            }
+        }
+        b {
+            z-index: 96;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 4px dashed transparent;
+            border-color: $font-color transparent transparent;
+            border-bottom: 0;
+            border-top-style: solid;
+            top: 19px;
+            right: 10px;
+            overflow: hidden;
+        }
+    }
+}

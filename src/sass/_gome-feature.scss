@@ -1,0 +1,98 @@
+@charset "utf-8";
+#gome-feature {
+    height: 481px;
+    .wrapper{
+        @include clearfix();
+    }
+    .bargains,
+    .fashion {
+        width: 420px;
+        float: left;
+        margin-right: 10px;
+        height: 481px;
+    }
+    .bargains {
+        .gm-title h2 {
+            background-position: -169px -100px;
+        }
+    }
+    .fashion {
+        .gm-title h2 {
+            background-position: -169px -132px;
+        }
+    }
+    .gm-title {
+        position: relative;
+        h2 {
+            background: url("../img/ui-two.png") no-repeat;
+            width: 70px;
+            text-indent: -200px;
+        }
+    }
+    .conts {
+        border: 1px solid #e6e6e6;
+        width: 418px;
+        height: 419px;
+        background: #fff;
+        overflow: hidden;
+    }
+    a {
+        display: block;
+        float: left;
+    }
+    .brands {
+        width: 340px;
+        float: right;
+        .gm-title h2 {
+            background-position: -169px -164px;
+        }
+        .conts {
+            width: 338px;
+        }
+    }
+    .special {
+        display: block;
+        width: 219px;
+        height: 419px;
+    }
+    .img_w199 {
+        display: block;
+        width: 199px;
+        height: 209px;
+    }
+    .line_dash {
+        border-bottom: 1px dashed #eee;
+    }
+}
+.brands_l {
+    width: 219px;
+    float: left;
+    img {
+        display: block;
+        width: 219px;
+        height: 209px;
+    }
+}
+.brands_r {
+    width: 119px;
+    float: right;
+    .brands_r_inner {
+        border-left: 1px solid #eee;
+        height: 419px;
+    }
+    a {
+        display: block;
+        height: 59px;
+        width: 118px;
+        text-align: center;
+        border-bottom: 1px #eee dashed;
+        opacity: 0.9;
+        filter:Alpha(opacity=90);
+        img {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            margin-top: 15px;
+        }
+    }
+}

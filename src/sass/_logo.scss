@@ -1,0 +1,12 @@
+.gome-logo {
+    @include floatflag();
+    margin: 32px 10px 0 0;
+    a {
+        display: block;
+        width: 125px;
+        height: 56px;
+        background: url("../img/logo.png") 0 0 no-repeat;
+        text-indent: $textindent;
+        overflow: hidden;
+    }
+}

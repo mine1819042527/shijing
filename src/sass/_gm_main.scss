@@ -1,0 +1,246 @@
+#gm_main {
+    position: relative;
+    .banner {
+        height: 450px;
+        width: 100%;       
+        position: relative;     
+    }
+    .focus_box li {
+        position: absolute;
+        height: 450px;
+        width: 100%;
+        opacity: 0;
+        a {
+            position: absolute;
+            left: 50%;
+            margin-left: -400px;
+            img {
+                display: block;
+                width: 750px;
+                height: 450px;
+                z-index: 20;
+            }
+        }
+    }
+    .img-btn-list {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -400px;
+        width: 750px;
+        height: 15px;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+        li {
+            width: 30px;
+            height: 5px;
+            display: inline-block;
+            z-index: 200;
+            margin: 0 4px;
+            cursor: pointer;
+            background: #000;
+            opacity: 0.3;
+            filter:Alpha(opacity=30);
+            margin-top: 4px;
+            &.active2 {
+                background: #f5004b;
+                opacity: 1;
+                filter:Alpha(opacity=100);
+            }
+        }
+    }
+    .btn,
+    .btnbg {
+        width: 40px;
+        height: 80px;
+        position: absolute;
+    }
+    .btn {
+        display: none;
+        z-index: 59;
+        left: 50%;
+        top: 185px;
+     
+    }
+    .btnbg {
+        display: block;
+        background: #000;
+        opacity: 0.2;
+        filter:Alpha(opacity=20);
+        top: 0;
+        left: 0;
+    }
+    .pre {
+        margin-left: 268px;
+    }
+    .nex {
+        margin-left: 309px;
+    }
+    .go_l,
+    .go_r {
+        width: 40px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        cursor: pointer;
+    }
+    .go_l {
+        background: url("../img/ui-two.png") 0 -112px no-repeat;
+    }
+    .go_r {
+        background: url("../img/ui-two.png") -42px -112px no-repeat;
+    }
+}
+.secone-right {
+    @include floatflag(right);
+    opacity: 0.9;
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    width: 250px;
+    height: 430px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 350px;
+    .gome-info {
+        height: 146px;
+        width: 220px;
+        overflow: hidden;
+        margin: 0 15px;
+        border-bottom: 1px dashed #ccc;
+        .kuaixun {
+            height: 36px;
+            width: 220px;
+            overflow: hidden;
+            span {
+                font-size: 14px;
+                float: left;
+                color: #333;
+                margin-top: 12px;
+                font-weight: 400;
+            }
+            a {
+                font-size: 12px;
+                text-align: center;
+                margin-top: 13px;
+                color: #888;
+                @include floatflag(right);
+                b {
+                    width: 7px;
+                    height: 9px;
+                    font-size: 1px;
+                    display: inline-block;
+                    margin-left: 4px;
+                }
+            }
+        }
+        .news {
+            span {
+                display: block;
+                width: 250px;
+                height: 26px;
+                font-size: 12px;
+                line-height: 26px;
+                a {
+                    color: $font-color;
+                    .news-title {
+                        color: #888;
+                        margin-right: 7px;
+                        @include floatflag();
+                        display: block;
+                        width: 26px;
+                        overflow: hidden;
+                        height: 26px;
+                    }
+                    .news-text {
+                        display: inline-block;
+                        @include floatflag();
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 196px;
+                    }
+                    &:hover {
+                        color: #f5004b!important;
+                    }
+                }
+            }
+        }
+    }
+    .small-logo {
+        width: 250px;
+        height: 146px;
+        position: relative;
+        z-index: 2;
+        ul {
+            width: 220px;
+            overflow: hidden;
+            position: relative;
+            left: 15px;
+            li {
+                height: 70px;
+                padding-top: 2px;
+                @include floatflag();
+                width: 55px;
+                margin-right: 18px;
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+                a {
+                    display: block;
+                    height: 71px;
+                    width: 38px;
+                    position: absolute;
+                    left: 14px;
+                    top: 12px;
+                    .gm-icon {
+                        display: block;
+                        color: #373737;
+                        font-size: 32px;
+                        margin-left: -13px;
+                        margin-bottom: 8px;
+                    }
+                    span {
+                        display: block;
+                        color: #5e5e5e;
+                        margin-left: -5px;
+                        font-size: 12px;
+                        width: 36px;
+                        height: 20px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        margin-top: -3px;
+                    }
+                }
+            }
+        }
+    }
+    .round {
+        height: 60px;
+        margin-top: 7px;
+        position: relative;
+        z-index: 1;
+        span {
+            position: absolute;
+            top: 14px;
+            left: 15px;
+            color: #fff;
+            &:nth-of-type(1) {
+                font: 700 14px/14px Microsoft YaHei;
+                height: 18px;
+                overflow: hidden;
+            }
+            &:nth-of-type(2) {
+                width: 120px;
+                font: 13px/16px Microsoft YaHei;
+                height: 18px;
+                overflow: hidden;
+                margin-top: 18px;
+            }
+        }
+    }
+}

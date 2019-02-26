@@ -1,0 +1,52 @@
+.gm_guess {
+    position: relative;
+    @include clearfix();
+    .guess_main {
+        width: 1198px;
+        height: 264px;
+        border: 1px solid #eee;
+        position: relative;
+        overflow: hidden;
+        ul {
+            width: 1200px;
+            height: 264px;
+            li {
+                width: 200px;
+                height: 224px;
+                margin-top: 20px;
+                float: left;
+                a {
+                    display: block;
+                    width: 199px;
+                    height: 210px;
+                    border-right: 1px dashed #eee;
+                    padding-top: 15px;
+                    img {
+                        display: block;
+                        height: 120px;
+                        width: 120px;
+                        margin-left: 40px;
+                    }
+                    .guess_title {
+                        color: #5e5e5e;
+                        font-size: 12px;
+                        line-height: 18px;
+                        width: 167px;
+                        height: 36px;
+                        margin: 32px 0 0 20px;
+                        cursor: pointer;
+                        overflow: hidden;
+                    }
+                    .guess_price {
+                        color: #ff0027;
+                        line-height: 16px;
+                        height: 16px;
+                        margin: 8px 0 0 20px;
+                        font-size: 16px;
+                        font-family: Arial,"Microsoft Yahei";
+                    }
+                }
+            }
+        }
+    }
+}

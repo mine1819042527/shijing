@@ -1,0 +1,188 @@
+@charset "utf-8";
+/*---------网页底部--------*/
+#gome-footer {
+    border-top: 1px solid $icon-color;
+    background: #f7f7f7;
+    margin-top: 15px;
+    zoom: 1;
+    .wrapper {
+        position: relative;
+        padding: 20px 0 0;
+        background: #f7f7f7;
+    }
+    span {
+        display: inline-block;
+        padding: 0 50px 40px 0;
+        i {
+            display: block;
+            width: 45px;
+            height: 45px;
+            background: url("../img/ui.png") 0 -135px;
+            @include floatflag();
+        }
+        p {
+            margin-left: 10px;
+            font: 12px/20px Arial,"Microsoft YaHei";
+            @include floatflag();
+            width: 210px;
+            overflow: hidden;
+            height: 45px;
+        }
+        strong {
+            color: #333;
+            display: block;
+            font: 400 16px/25px Arial,"Microsoft YaHei";
+        }
+        a {
+            color: #999;
+        }
+    }
+    a {
+        color: #666;
+    }
+    .used i {
+        background-position: -45px -135px;
+    }
+    @include clearfix();
+    .qrcode-section {
+        position: absolute;
+        right: -10px;
+        top: 15px;
+        font-size: 0;
+    }
+    em i {
+        background: url("../img/ui.png");
+        display: inline-block;
+    }
+    p {
+        font: 12px/22px Arial;
+        color: #999;
+    }
+    .code-sm {
+        width: 50px;
+        margin: 0 10px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        position: relative;
+        i {
+            width: 40px;
+            height: 25px;
+        }
+    }
+    .wx i {
+        background-position: -105px -135px;
+    }
+    .wap i {
+        background-position: -185px -135px;
+    }
+    .code-bg {
+        width: 110px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        position: relative;
+        i {
+            width: 90px;
+            height: 90px;
+            background-position: 0 -246px;
+        }
+        a {
+            display: block;
+            width: 90px;
+            height: 90px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    ul {
+        overflow: hidden;
+    }
+    li {
+        @include floatflag();
+        font: 12px/22px Arial,"Microsoft YaHei";
+        padding: 0 13px 0 0;
+        color: #ccc;
+        white-space: nowrap;
+    }
+    .interDrug {
+        a {
+            color: #999;
+        }
+    }
+    a {
+        &:hover {
+            color: $fonthover-color;
+        }
+    }
+}
+.gome-footer-credit {
+    border-top: 1px solid #e6e6e6;
+    margin-top: 5px;
+    padding: 10px 0 25px;
+    overflow: hidden;
+    i {
+        display: block;
+        width: 35px;
+        height: 35px;
+        background: url("../img/ui.png") 0 -180px;
+        @include floatflag();
+    }
+    b {
+        font: 12px/18px Arial,"Microsoft YaHei";
+        display: block;
+        width: 50px;
+        @include floatflag();
+        color: #999;
+        padding: 0 30px 0 5px;
+        font-weight: 400;
+    }
+    .credit-baxx b {
+        width: 60px;
+    }
+    .credit-xypj {
+        i {
+            background-position: -35px -180px;
+        }
+    }
+    .credit-cxwz {
+        i {
+            background-position: -70px -180px;
+        }
+        b {
+            padding-top: 9px;
+        }
+    }
+    .credit-wljc {
+        i {
+            background-position: -105px -180px;
+        }
+    }
+    .credit-djp {
+        i {
+            background-position: -140px -180px;
+        }
+        b {
+            padding-top: 9px;
+            width: 60px;
+        }
+    }
+    .credit-jbzx {
+        i {
+            background-position: -175px -180px;
+        }
+        b {
+            width: 110px;
+        }
+    }
+    .credit-rztx {
+        i {
+            width: 30px;
+            background-position: -210px -180px;
+        }
+        b {
+            width: 106px;
+        }
+    }
+}

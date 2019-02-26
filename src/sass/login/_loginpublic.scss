@@ -1,0 +1,8 @@
+@charset "utf-8";
+.corp-login dd a.more, .corp-login dd a.active, .warningTip em, .safeTip em {
+    background: url(../img/login-bg-common.png) no-repeat;
+}
+a:hover {
+    color: #e3101e;
+    text-decoration: underline;
+}

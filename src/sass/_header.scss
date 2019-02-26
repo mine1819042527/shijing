@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*---------网页头部-------*/
+#gome-header {
+    height: 120px;
+    vertical-align: middle;
+    z-index: 980;
+    .wrapper{
+        position: relative;
+       @include clearfix();
+    }    
+}
+
+
+
+

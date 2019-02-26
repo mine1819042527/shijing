@@ -1,0 +1,82 @@
+/*--------section_5-----------*/
+#gm-finance {
+    height: 290px;
+    overflow: hidden;
+    @include clearfix();
+    .finance {
+        height: 230px;
+        width: 1199px;
+        border-right: 1px solid #e6e6e6;
+        .finance-left {
+            width: 420px;
+            height: 230px;
+            @include floatflag();
+            position: relative;
+            overflow: hidden;
+            img {
+                display: block;
+                width: 420px;
+                height: 230px;
+            }
+        }
+        .finance-right {
+            width: 779px;
+            @include floatflag();
+            height: 228px;
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            ul {
+                width: 780px;
+                .w194 {
+                    width: 194px;
+                    img {
+                        border: none;
+                    }
+                }
+                img {
+                    display: inline-block;
+                    width: 194px;
+                    height: 228px;
+                    border-left: 1px dashed #eee;
+                }
+            }
+            a {
+                display: block;
+                float: left;
+                width: 195px;
+                height: 228px;
+            }
+        }
+        .finance_entrance {
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-size: 14px;
+        padding: 0 13px;
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        bottom: 48px;
+        font-weight: 400;
+        z-index: 1;
+        border-radius: 2px;
+        background: #b88828;
+        a {
+            color: #fff;
+            display: inline-block;
+            height: 21px;
+            float: left;
+        }
+        span {
+            display: inline-block;
+            margin-left: 10px;
+            float: left;
+            width: 7px;
+            height: 11px;
+            margin-top: 9px;
+            background: url("../img/ui-two.png") -126px -52px no-repeat;
+        }
+    }
+    }
+    
+}

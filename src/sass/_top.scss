@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/*-----网页顶部--------*/
+#gome-top {
+    position: relative;
+    border-bottom: 1px solid #f3f3f3;
+    background: $bg-color;
+    height: 30px;
+    color: #5e5e5e;
+    z-index: 999;
+}
+.top {
+    position: relative;
+    @include clearfix();
+    li {
+        float: left;
+        position: relative;       
+        font: 400 12px/30px Arial,"Microsoft YaHei";
+    }
+    b {
+        font-weight: 400;
+        display: block;
+        padding: 0 20px 0 10px;
+        border: 1px solid #f8f8f8;
+        border-bottom: 0;
+        height: 30px;
+        overflow: hidden;
+        position: relative;
+        z-index: 200;
+        color: #888;
+        i {
+            position: absolute;
+            top: 12px;
+            right: 8px;
+            background-position: -62px -433px;
+            width: 7px;
+            height: 4px;
+            overflow: hidden;
+        }
+    
+    
+    }
+    a {
+        color: #888;
+        &:hover {
+            color: #f5004b;
+            text-decoration: none;
+        }
+    }
+    
+    i,
+    em {
+        background: url("../img/ui.png");
+        display: inline-block;
+        vertical-align: middle;
+    }
+    em {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+    }
+    .gome-user {
+        margin-right: 12px;
+        .public-dropdown {
+            width: 290px;
+        }
+    }
+    .gome-link {
+        height: 30px;
+        overflow: hidden;
+        margin: 0;
+        a {
+            margin-right: 10px;
+            line-height: 32px;
+            &.gome-link-register {
+                color: #f5004b;
+                i {
+                    display: inline-block;
+                    width: 12px;
+                    height: 13px;
+                    background-position: -145px -1496px;
+                    margin-left: 5px;
+                    margin-top: -4px;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    #gome-top-right {
+        float: right;
+    }
+    .public-dropdown {
+        position: absolute;
+        top: 28px;
+        width: 320px;
+        background: #fff;
+        left: 0;
+        overflow: hidden;
+        padding: 15px;        
+        height:auto;
+        display: none;
+        border: 1px solid #ccc;
+        z-index: 100;
+    }
+}
+#user-name {
+    padding: 5px 0 20px;
+    overflow: hidden;
+    i {
+        background-position: 0 -337px;
+    }
+    i,
+    i img {
+        float: left;
+        width: 55px;
+        height: 55px;
+        border-radius: 50px;
+    }
+    div {
+        float: left;
+        font: 400 12px/20px Arial,"Microsoft YaHei";
+        padding: 0 0 0 15px;
+        width: 220px;
+    }
+    p {
+        color: #888;
+        width: 100%;
+        line-height: 16px;
+        overflow: hidden;
+    }
+    .user-name-login {
+        padding-top: 20px;
+        a {
+            color: #069;
+        }
+    }
+}
+#user-icon {
+    border-top: 1px solid #f3f3f3;
+    padding-top: 15px;
+    position: relative;
+    p {
+        line-height: 18px;
+        a {
+            float: right;
+            color: #ccc;
+        }
+        a:hover,
+        span {
+            color: #f5004b;
+        }
+    }
+    .user-icon-prev,
+    .user-icon-next {
+        position: absolute;
+        top: 54px;
+        width: 16px;
+        height: 29px;
+        cursor: pointer;
+        background: url("../img/ui.png") -60px -357px;
+        display: inline-block;
+    }
+    .user-icon-prev {
+        left: 0;
+    }
+    .user-icon-next {
+        right: 0;
+        background-position: -76px -357px;
+    }
+    div {
+        margin: 10px 25px 0;
+    }
+    ul {
+        height: 70px;
+        overflow: hidden;
+    }
+    li {
+        text-align: center;
+        a {
+            color: #ccc;
+        }
+    }
+    i {
+        display: block;
+        height: 40px;
+        background: 0 0;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+.gome-mygome {
+    .public-dropdown {
+        width: 260px;
+        padding: 0;
+    }
+    strong {
+        display: block;
+        font-weight: 700;
+        padding: 10px 10px 0;
+        a {
+            color: #069;
+        }
+    }
+    li,
+    p,
+    strong {
+        font: 12px/24px Arial,"Microsoft YaHei";
+        color: #888;
+    }
+    p {
+        clear: both;
+        background: #f8f8f8;
+        padding: 10px;
+        overflow: hidden;
+    }
+}
+ins {
+    text-decoration: none;
+    margin-left: 4px;
+}
+#mygome-order {
+    padding: 0 0 9px;
+    margin: 0 10px;
+    border-bottom: 1px solid #f3f3f3;
+    overflow: hidden;
+    li {
+        float: left;
+        width: 50%;
+        line-height: 25px;
+        height: 25px;
+    }
+}
+#mygome-order ins,
+#mygome-coupon ins {
+    display: inline-block;
+    vertical-align: middle;
+    color: #cdcdcd;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#mygome-coupon {
+    padding-left: 4px;
+    li {
+        float: left;
+        width: 63px;
+        text-align: center;
+        padding: 8px 0 10px;
+        a {
+            display: block;
+            line-height: 14px;
+            margin: 5px 0;
+            border-right: 1px solid #f3f3f3;
+        }
+        ins {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+#mygome-track {
+    background: #f8f8f8;
+    padding: 0 0 18px 10px;
+    height: 50px;
+    overflow: hidden;
+    li {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 0 12px 10px 0;
+        background: url("../img/ui.png") 0 -397px;
+    }
+}
+.gome-phone .public-dropdown,
+.gome-enterprise .public-dropdown {
+    left: auto;
+    right: 0;
+    width: auto;
+}
+.gome-enterprise .public-dropdown {
+    width: 200px;
+    padding: 0;
+    a {
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        background: url("../img/ui.png");
+        &.gome-qrcode {
+            background-position: 0 -1511px;
+        }
+    }
+}
+.gome-phone b,
+.gome-service b {
+    padding-left: 29px;
+}
+.gome-service {
+    b em {
+        font-size: 17px;
+        color: #dd00a7;
+        background: 0 0;
+        line-height: 30px;
+        height: 30px;
+        top: 0;
+    }
+    .public-dropdown {
+        width: 210px;
+        padding-top: 0;
+    }
+    p {
+        font: 700 12px/24px Arial,"Microsoft YaHei";
+        color: #898989;
+    }
+    ul {
+        padding: 0 0 10px;
+        height: 48px;
+        overflow: hidden;
+    }
+    li {
+        float: left;
+        font: 12px/24px Arial,"Microsoft YaHei";
+        width: 33%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .live800-service {
+        color: #fff;
+        background: #dd00a7;
+        text-align: center;
+        display: block;
+        line-height: 25px;
+        height: 25px;
+        cursor: pointer;
+        font-weight: 400;
+        margin-top: 4px;
+        em {
+            font-size: 19px;
+            line-height: 25px;
+            height: 25px;
+            color: #fff;
+            background: 0 0;
+            position: static;
+        }
+    }
+}
+.gome-sitemap {
+    position: static!important;
+    .public-dropdown {
+        left: 0;
+        width: 1198px;
+        @include clearfix();
+    }
+    dl {
+        float: left;
+        padding: 0 15px 0 40px;
+        border-left: 1px solid #f3f3f3;
+        margin: 15px 0;
+        &.none {
+            border: none;
+        }
+    }
+    dt {
+        font: 700 14px/14px Arial,"Microsoft YaHei";
+        margin: 0 0 14px;
+    }
+    dd {
+        overflow: hidden;
+        min-height: 120px;
+    }
+    ul {
+        float: left;
+        width: 75px;
+    }
+    li {
+        width: 100%;
+        text-align: left;
+        font: 12px/24px Arial,"Microsoft YaHei";
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+.gome-phone {
+    position: static!important;
+    b em {
+        font-size: 17px;
+        color: #dd00a7;
+        background: 0 0;
+        line-height: 30px;
+        height: 30px;
+        top: 0;
+    }
+    .public-dropdown {
+        a {
+            display: inline-block;
+            height: 170px;
+            width: 130px;
+            background: url("../img/ui.png");
+            &.gome-qrcode {
+                background-position: 0 -799px;
+            }
+        }
+    }
+}
+.top{
+    .tab2{
+        .tab_b{
+            &.active2{
+                background: #ffffff;
+                
+        a{
+            color: #f5004b;
+        }
+     
+            }
+        }
+        .show2{
+            display: block;
+        }
+    }
+    
+}

@@ -1,0 +1,50 @@
+#gome-bar-border {
+    position: relative;
+    width: 35px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #5c5c5c;
+    z-index: 998;
+    
+     ul {
+    position: absolute;
+    right: 0;
+}
+li {
+    cursor: pointer;
+    position: relative;
+}
+ b {
+    background: url(../img/ui.png) -47px -464px;
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+}
+}
+#gome-bar-border-tab {
+    width: 35px;
+    top: 300px;
+    
+    li {
+    height: 36px;
+    font-size: 12px;
+    &.gome-bar-btn-member {
+    height: 39px;
+    line-height: 39px;
+}
+}
+    
+}
+
+.gome-bar-btn-member {
+    text-align: center;
+    line-height: 42px;
+    .membericon {
+    background: url(../img/ui.png) no-repeat -18px -1025px;
+    display: inline-block;
+    width: 28px;
+    height: 18px;
+    margin-top: 9px;
+}
+}

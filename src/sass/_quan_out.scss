@@ -1,0 +1,33 @@
+/*--------section_4-----------*/
+#quan_out{
+    margin-top: 20px;
+    @include clearfix();
+}
+.coupon {
+    @include floatflag();
+}
+.quan {
+    margin-left: -1px;
+    width: 1040px;
+    @include floatflag();
+    li {
+        width: 208px;
+        height: 110px;
+        overflow: hidden;
+        @include floatflag();
+        a {
+            border-right: 1px dashed #ddd;
+            display: inline-block;
+            width: 207px;
+            height: 110px;
+            overflow: hidden;
+            img {
+                margin-left: -1px;
+            }
+        }
+    }
+}
+.more {
+    width: 39px;
+    @include floatflag(right);
+}
